@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Monthly weather</title>
+
+    <link rel="icon" type="png" href="images/favicon.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav_content">
+        <img src="images/logo.png">
+        <ul class="nav_menu">
+            <li><a href="indexEN.html">Home</a></li>
+            <li><a href="weatherEN.html">Forecast</a></li>
+            <li><a href="formEN.html">Quiz</a></li>
+            <li><a href="#footer">Author</a></li>
+        </ul>
+
+        <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" for="menu_toggle">
+                <span></span>
+            </label>
+            <div class="menu_box">
+            <div><a class="menu-item" href="indexEN.html">Home</a></div>
+            <div><a class="menu-item" href="weatherEN.html"> Forecast</a></div>
+            <div><a class="menu-item" href="formEN.html">Quiz</a></div>
+            <div><a class="menu-item" href="#footer">Author</a></div>
+            </div>
+        </div>
+        </div>
+    </nav>
+<div class="main_container">
+    <div class="main_img">
+        <img src="images/rain.png">
+    </div>
+    <div class="main_content">
+    <h1>What is a weather forecast for?</h1>
+    <p>Every person needs to know the weather forecast, and not only for one day, but most often for several days ahead.
+        This allows you to understand how to dress yourself, dress your children according to the weather,
+        as well as to beware of the appearance of any health complications associated with changes in atmospheric pressure, air temperature.
+        We need a forecast to make plans for daily activities,
+        which are held on the street, in the fresh air, as well as plan walks,
+        weekends, holidays and holidays.
+        In a word, the weather has a significant impact on human life, ranging from issues,
+        in what clothes to go to work, whether to take an umbrella, whether to cover the zucchini with a film at night in the vegetable garden,
+        to issues of launching rockets, building houses and so on.</p>
+    </div>
+</div>
+
+<h2>How is the weather determined for a month?</h2>
+<p>As we found out, determining an accurate weather forecast is quite an important task that should not be underestimated. If you want to know how weather forecasting works, go to <a href="https://www.google.com">this page</a>, or click on the button in the header of the site.</p>
+<h2>Social quiz</h2>
+<p>Also on our site, there is a large social issue made to collect data about our site visitors. If you have such a desire, you can pass it. Your feedback will greatly help us in the further development of the project. The link to the survey is available <a href="https://www.google.com">here</a>, or in the site header.</p>
+<h1>Monthly weather</h1>
+<p>Weather data for a month in Moscow was taken from two different sites: <button  class="gismeteo">Gismeteo</button> and <button class="rambler">Rambler</button>.</p>
+<div class="weather">
+<iframe id="gismeteo"src="https://www.gismeteo.ru/weather-moscow-4368/month/">
+
+</iframe>
+<iframe id="rambler"src="https://weather.rambler.ru/v-moskve/30-days/">
+    
+</iframe>
+</div>
+<footer id="footer">
+    <div class="footer_container">
+        <img src="images/logo.png">
+        <p>Maksimenko Viktor Aleksandrovich IKBO-13-21</p>
+        <a href="index.html">RU</a>
+    </div>
+</footer>
+</body>
+<script src="scripts/script.js"></script>
+</html>

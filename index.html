@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Погода на месяц</title>
+
+    <link rel="icon" type="png" href="images/favicon.png">
+
+</head>
+
+<body>
+    <nav>
+        <div class="nav_content">
+        <img src="images/logo.png">
+        <ul class="nav_menu">
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="weather.html">Предсказание погоды</a></li>
+            <li><a href="form.html">Опрос</a></li>
+            <li><a href="#footer">Автор</a></li>
+        </ul>
+
+        <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" for="menu_toggle">
+                <span></span>
+            </label>
+            <div class="menu_box">
+            <div><a class="menu-item" href="index.html">Главная</a></div>
+            <div><a class="menu-item" href="weather.html"> Предсказание погоды</a></div>
+            <div><a class="menu-item" href="form.html">Опрос</a></div>
+            <div><a class="menu-item" href="#footer">Автор</a></div>
+            </div>
+        </div>
+        </div>
+
+        
+    </nav>
+<div class="main_container">
+    <div class="main_img">
+        <img src="images/rain.png">
+    </div>
+    <div class="main_content">
+    <h1>Для чего нужен прогноз погоды?</h1>
+    <p>Прогноз погоды каждому человеку нужно знать, и не только на один день, а чаще всего на несколько суток вперед.
+        Это позволяет понять, как одеться самому, одеть своих детей по погоде, 
+        а также предостеречься от появления каких-то осложнений со здоровьем, связанных с переменой атмосферного давления, температуры воздуха.
+        Прогноз нужен нам, чтобы строить планы, относительно ежедневных мероприятий,
+        которые проводятся на улице, на свежем воздухе, а также спланировать прогулки, 
+        выходные, праздничные и отпускные дни. 
+        Одним словом, погода проявляет существенное влияние на человеческую жизнь, начиная от вопросов, 
+        в какой одежде идти на работу, брать ли зонтик, закрывать ли на ночь в огороде кабачки пленкой, 
+        до вопросов запуска ракет, строительства домов и так далее.</p>
+    </div>
+</div>
+
+<h2>Как определяется погода на месяц?</h2>
+<p>Как мы выяснили, определение точного прогноза погоды довольно важное занятие, которое не стоит недооценивать. Если вы желаете узнать как происходит предсказание погоды перейдите на <a href="https://www.google.com">эту страницу</a>, либо кликните по кнопке в шапке сайта.</p>
+<h2>Социальный опрос</h2>
+<p>Также на нашем сайте, присутствует набольшой социальный вопрос, сделанный для сбора данных о посетителях нашего сайта. Есди у вас есть такое желание, можете пройти его. Ваш отзыв сильно поможет нам в дальнейшемразвитии проекта. Ссылку на опрос можно взять <a href="https://www.google.com">здесь</a>, либо в шапке сайта</p>
+<h1>Погода на месяц</h1>
+<p>Данные о погоде на месяц в Москве были взяты с двух разных сайтов: <button  class="gismeteo">Gismeteo</button> и <button class="rambler">Rambler</button>.</p>
+<div class="weather">
+<iframe id="gismeteo"src="https://www.gismeteo.ru/weather-moscow-4368/month/">
+
+</iframe>
+<iframe id="rambler"src="https://weather.rambler.ru/v-moskve/30-days/">
+    
+</iframe>
+</div>
+<footer id="footer">
+    <div class="footer_container">
+        <img src="images/logo.png">
+        <p>Максименко Виктор Александрович ИКБО-13-21</p>
+        <a href="IndexEN.html">EN</a>
+    </div>
+</footer>
+</body>
+<script src="scripts/script.js"></script>
+</html>

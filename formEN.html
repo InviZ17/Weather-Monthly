@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <title>Monthly weather</title>
+
+    <link rel="icon" type="png" href="images/favicon.png">
+
+</head>
+<body>
+    <nav>
+        <div class="nav_content">
+        <img src="images/logo.png">
+        <ul class="nav_menu">
+            <li><a href="indexEN.html">Home</a></li>
+            <li><a href="weatherEN.html">Forecast</a></li>
+            <li><a href="formEN.html">Quiz</a></li>
+            <li><a href="#footer">Author</a></li>
+        </ul>
+        <div class="hamburger-menu">
+            <input id="menu_toggle" type="checkbox" />
+            <label class="menu_btn" for="menu_toggle">
+                <span></span>
+            </label>
+            <div class="menu_box">
+            <div><a class="menu-item" href="indexEN.html">Home</a></div>
+            <div><a class="menu-item" href="weatherEN.html"> Forecast</a></div>
+            <div><a class="menu-item" href="formEN.html">Quiz</a></div>
+            <div><a class="menu-item" href="#footer">Author</a></div>
+            </div>
+        </div>
+        </div>
+    </nav>
+
+    <h2>Quiz</h2>
+    <form method="get" id="Form">
+        <fieldset>
+        <legend> 1) Enter your email</legend>
+        <input required type="email" placeholder="example@gmail.com" size="20">
+        </fieldset>
+        <fieldset>
+            <legend>2) When is your birthday?</legend>
+            <input size="8" type="date" value="2022-10-10" max="2022-10-10">
+        </fieldset>
+        <fieldset>
+            <legend>3) How often do you watch the weather forecast?</legend>
+            <label><input required type="radio" name="first">
+                Every day
+            </label>
+            <label><input type="radio" name="first">
+                Once a week
+            </label>
+            <label><input type="radio" name="first">
+                Once a month
+            </label>
+            <label><input type="radio" name="first">
+                Once a year
+            </label>
+        </fieldset>
+        <fieldset>
+        <legend> 4) What sources of information do you use to view the weather forecast?</legend>
+            <label><input type="checkbox" name="second"  checked>
+                Sites on the Internet
+            </label>
+            <label><input type="checkbox" name="second">
+                TV shows
+            </label>
+            <label><input type="checkbox" name="second">
+                Newspapers
+            </label>
+        </fieldset>
+        <fieldset>
+        <legend>5) Write your review about this site</legend>
+        <textarea cold="5" rows="3" placeholder="I really liked this site"></textarea>
+        </fieldset>
+        
+        <!--<input type="password"></input>-->
+        <fieldset>
+        <legend>6) Take a picture of the weather outside</legend>
+        <input id="file"type="file"></input>
+        </fieldset>
+        <fieldset>
+            <legend>7) Enter your phone</legend>
+            <input pattern="[0-9]{11}"type="tel" placeholder="+79031234567">
+        </fieldset>
+        <fieldset>
+        <legend>8) What region are you from?</legend>
+        <select required name="select">
+            <option>Moscow</option>
+            <option>Moscow region</option>
+            <option>St. Petersburg</option>
+            <option>Vladivostok</option>
+        </select>
+        </fieldset>
+        
+        <button type ="submit">Send</button>
+    </form>
+    <footer id="footer">
+        <div class="footer_container">
+            <img src="images/logo.png">
+            <p>Maksimenko Viktor Aleksandrovich IKBO-13-21</p>
+            <a href="form.html">RU</a>
+        </div>
+    </footer>
+</body>
+</html>
